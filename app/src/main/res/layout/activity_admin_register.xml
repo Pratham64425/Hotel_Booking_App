@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    android:padding="20dp">
+
+
+
+    <TextView
+        android:id="@+id/adminIdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="Admin id"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="Phone no."
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:padding="10dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:padding="10dp"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

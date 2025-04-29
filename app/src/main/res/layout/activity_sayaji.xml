@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#f0f0f0"
+    tools:context=".SayajiActivity">
+
+    <!-- Hotel Image -->
+    <ImageView
+        android:id="@+id/hotel_2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:src="@drawable/hotel_5"
+        android:scaleType="centerCrop"
+        android:contentDescription="Hotel Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Hotel Name -->
+    <TextView
+        android:id="@+id/hotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sayaji"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_2"/>
+
+    <!-- Hotel Description -->
+    <TextView
+        android:id="@+id/hotelDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Explore the vibrant IT hub of Hinjawadi in Pune with a stay at Sayaji. "
+        android:textSize="20sp"
+        android:textColor="#555555"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelName"/>
+
+    <!-- Hotel Features -->
+
+    <!-- Five-Star Rating -->
+
+    <TextView
+        android:id="@+id/hotelFeatures"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:text="• Free Wi-Fi\n• Swimming Pool\n• Restaurant &amp; Bar"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starRating" />
+
+    <LinearLayout
+        android:id="@+id/starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelDescription">
+
+        <!-- Star Icons -->
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Star 1"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Star 2"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Star 3"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Star 4"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Star 5"
+            android:src="@drawable/star" />
+
+
+    </LinearLayout>
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelFeatures">
+
+        <!-- Book Now Button -->
+        <Button
+            android:id="@+id/btnSayBookNow"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#009688"
+            android:text="Book Now"
+            android:textColor="#ffffff" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnSayBack"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#f44336"
+            android:text="Back"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

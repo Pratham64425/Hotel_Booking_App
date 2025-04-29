@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone" />
+
+    <Spinner
+        android:id="@+id/spinnerRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Select Check-in Date"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="#6A6A6A" />
+
+    <TextView
+        android:id="@+id/tvCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Select Check-out Date"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="#6A6A6A" />
+
+    <Spinner
+        android:id="@+id/spinnerIdProofType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/etIdProofNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Enter ID Proof Number"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Submit Booking"
+        />
+    <Button
+        android:id="@+id/btnformHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Back to Home"/>
+
+</LinearLayout>
